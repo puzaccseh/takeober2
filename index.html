@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive - Premier Online Shopping</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        /* Top Banner */
+        .top-banner {
+            background-color: #000;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        .top-banner a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        /* Navbar Styles */
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            margin: 0 1rem;
+        }
+        .search-bar {
+            max-width: 200px;
+        }
+        .icon-links a {
+            font-size: 1.25rem;
+        }
+        /* Responsive Search Bar on Mobile */
+        @media (max-width: 768px) {
+            .search-bar {
+                max-width: 150px;
+            }
+        }
+        .banner {
+            background-color: #000000;
+            color: white;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: #070707;
+        }
+        .founder-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .stat-box {
+            width: 250px;
+            height: 250px;
+            padding: 20px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 0 12px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            margin: 20px;
+        }
+        .stat-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .stat-value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .stat-text {
+            font-size: 18px;
+        }
+        .team-member {
+            text-align: center;
+            padding: 20px;
+        }
+        .team-member img {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            margin: 0 8px;
+            font-size: 1.1rem;
+        }
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+        .features-section .feature-icon-wrapper {
+            display: inline-block;
+            padding: 10px;
+        }
+        .feature-icon-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #2f2a2a;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+        }
+        h4 {
+            font-weight: bold;
+        }
+        p {
+            font-size: 14px;
+            color: #000000;
+        }
+        .footer {
+            background-color: #000; /* Dark background */
+        }
+        .footer h5 {
+            font-weight: bold;
+        }
+        .footer p, .footer a {
+            font-size: 14px;
+            color: #b5b5b5; /* Light gray text */
+        }
+        .footer .input-group {
+            max-width: 250px;
+        }
+        .footer .btn {
+            border: none;
+        }
+        .footer .social-icons i {
+            font-size: 1.5rem;
+        }
+        .footer .app-buttons img {
+            max-width: 120px;
+        }
+        .footer .social-icons a {
+            color: #b5b5b5;
+            transition: color 0.3s ease;
+        }
+        .footer .social-icons a:hover {
+            color: white;
+        }
+        .footer .list-unstyled a:hover {
+            color: white;
+        }
+        .our-story {
+            background-color: #fff; /* Background color for the section */
+        }
+        .our-story h2 {
+            font-family: 'Arial', sans-serif; /* Optional: customize font */
+            color: #333; /* Dark text color */
+        }
+        .our-story p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+        }
+        .our-story img {
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+        @media (max-width: 768px) {
+            .our-story .row {
+                flex-direction: column-reverse; /* Stack text and image vertically on smaller screens */
+            }
+        }
+        .navbar-brand{
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Banner -->
+    <div class="top-banner text-center p-2">
+        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></span>
+    </div>
+
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <div class="container">
+                <!-- Brand Name -->
+                <a class="navbar-brand fw-bold" href="#">Exclusive</a>
+                
+                <!-- Centered Links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Search Box and Icons -->
+                <div class="d-flex align-items-center">
+                    <form class="d-flex me-3">
+                        <input class="form-control search-bar" type="search" placeholder="What are you looking for?" aria-label="Search">
+                        <button class="btn btn-outline-secondary ms-1" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- Icons -->
+                    <div class="icon-links d-flex">
+                        <a href="#" class="me-3 text-dark"><i class="fas fa-heart"></i></a>
+                        <a href="#" class="me -3 text-dark"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#" class="text-dark"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Navbar Toggle Button (for mobile) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="our-story py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <h2 class="display-4 fw-bold">Our Story</h2>
+                    <p>
+                        Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region. 
+                    </p>
+                    <p>
+                        Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging  from consumer.
+                    </p>
+                </div>
+
+                <!-- Image Section -->
+                <div class="col-md-6">
+                    <img src="https://s3-alpha-sig.figma.com/img/fcc8/9aaa/7b85f8c1dcce81e71e2eb178be13bd4d?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZsuXCm7qjVlEr2fGtFrnCAXH3l5PhEojRuGXDi-P4JJYVmMFwCzOhyk9Kh-ozd0tIYY~3i8Tvw6joFmqrbJqtohr7I-TcQbvo4ocDqpZ9PT-8lrOItK46WHd2C9vo-xI2dyIqKk-EVa-kKnpRi0GaqdjNVIg77ykMlo~bE0GNd8mkJgfRaNz0CyaaHp3p9d5J-tEcPj4UnBFdrnV5ywJoVp9Z79w-8bA6l1ZxDS~oxpj6FsQeI2avsZvYeq8FsUzi-2TdhOWwL7kd4bN7w-fS3hQH5J-in8eh-Qm7AXxqaNNDzsy2ElLSZv7lHvvf0FcIllE1F0zsRA~UGvnr5NIjw__" alt="Shopping Image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                        <div class="stat-value">10.5k</div>
+                        <div class="stat-text">Sellers active our site</div>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="stat-box red">
+                        <div class="stat-icon">
+                            <i class="bi bi-cash-stack"></i>
+                        </div>
+                        <div class="stat-value">33k</div>
+                        <div class="stat-text">Monthly Product Sale</div>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="bi bi-gift"></i>
+                        </div>
+                        <div class="stat-value">45.5k</div>
+                        <div class="stat-text">Customer active in our site</div>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="bi bi-wallet"></i>
+                        </div>
+                        <div class="stat-value">25k</div>
+                        <div class="stat-text">Annual gross sale in our site</div>
+                    </div>
+                </div >
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Team Member 1 -->
+                <h2 class="text-center mb-4">Our Team Member</h2>
+                <div class="col-md-4 team-member">
+                    <img src="https://s3-alpha-sig.figma.com/img/0881/49fd/5afc043392ee3cbb529f429b3e2098d3?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bG90SKQDCd90k03u-bmqI5UT8T9jxrxMxKuVAVpzd3Qa~8YMokZ4Z7FTa3aBc2k9UF6MAQzfi6I7rnr2E5tYQuCVpXyUmVEdTBfuzECjnEwc8ULhTn9eUNoTKZ1pjcXfmKSsa5Gb606zsYPeMG3BVbWP-XLpu-2D4U8GhMmEp3plRRjPmVqvxrwDMBlpzFVKU97BFngb56rIftAy-1kavKsGgQ1E3TQaGXwm-srreGV60InEX2B4grSglbrrclAABNpOP0qgunSO2dlRmCPYknSVqbFOdhaBrj-AWBlfWGM1q4Y1MLpUT7q48N0q8mZMPcOYD5WPQBO0JVVdmdOSCg__" alt="Tom Cruise">
+                    <h3>Tom Cruise</h3>
+                    <p>Founder & Chairman</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-danger">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-info">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Team Member 2 -->
+                <div class="col-md-4 team-member">
+                    <img src="https://s3-alpha-sig.figma.com/img/8438/eab9/a2fe88af0272adecd83422d0cb7e20d7?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qB0C2rAP5--D8bnGQgFyiNL2qkHApwppQECTOwYrLcCGiUCM5jQg2wNRbgVAEoXt57FR2LhHW2unzh2D5GY3o0HHgbwamuceE4DTw2BmUSWPMZc4ftRF~kc86yLmR7ZBFId0spKpvEFWwo1Am0HIxwDWMHd1iKZX~sQee5NmIBHtSXvatEgPnjwDPenX~heAkuO02INbaAo8HnIq5Pz4O2BKZmXHR87nmDW8v4vNRBDV9K3Iyxtaqjhi0o1g0hJGwRSy929PRVWJrFcCmYMMKT3ejt05KBRhsVGOQgzrwzX-XseNTsI0pG0U6CKFNi6KjtfPgKr-DL6PifC4DoMZRA__" alt="Emma Watson">
+                    <h3>Emma Watson</h3>
+                    <p>Managing Director</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-danger">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-info">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div >
+    
+                <!-- Team Member 3 -->
+                <div class="col-md-4 team-member">
+                    <img src="https://s3-alpha-sig.figma.com/img/ede4/8f2b/5df8103b281240ce5bafe5dd7d215ab8?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YkorLNjVyFeABxNZ2fOFtPLtNu95~KUiisxvo4aHEvSynzpfTLAlpdCWyEInyCdxHdsMLee-fQdEPLuomr2WXkMaFeDeIUMjNZmBU9dqAejO5EOEEaAv4kgoM5LmpbjG794JyTbDAXaLiLer0Fj-4mz73AOwSC7s2Y4p6oFiHFfaXFu98T-kqLiSFA5lLkiI5i5NyYxEfoFtla~yTP7KUAGOBPJ9gTmEKhCuOV2i3ogI-mPpsYTEZBMVuuyb0xSM~v2hnI-ti-yIGZD5s-o-K5wNY~Sel7e-iYBJ~MPyfgKesc8bprDj~6v~9~YJtiJ02aLHbshCfoySEuEI2y1P2g__" alt="Will Smith">
+                    <h3>Will Smith</h3>
+                    <p>Product Designer</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" class="text-primary">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-danger">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-info">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <h2 class="text-center mb-4">Features</h2>
+        <br>
+        <div class="container">
+            <div class="row text-center">
+                <!-- Feature 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-truck feature-icon"></i>
+                        </div>
+                    </div>
+                    <h4>FREE AND FAST DELIVERY</h4>
+                    <p>Free delivery for all orders over $140</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-headset feature-icon"></i>
+                        </div>
+                    </div>
+                    <h4>24/7 CUSTOMER SERVICE</h4>
+                    <p>Friendly 24/7 customer support</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon-circle">
+                            <i class="bi bi-shield-check feature-icon"></i>
+                        </div>
+                    </div>
+                    <h4>MONEY BACK GUARANTEE</h4>
+                    <p>We return money within 30 days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Subscribe Section -->
+                <div class="col-md-3 mb-4">
+                    <h5>Exclusive</h5>
+                    <p>Subscribe</p>
+                    <p>Get 10% off your first order</p>
+                    <form action="#" class="footer-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Support Section -->
+                <div class ="col-md-3 mb-4">
+                    <h5>Support</h5>
+                    <p>111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+
+                <!-- Account Section -->
+                <div class="col-md-2 mb-4">
+                    <h5>Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">My Account</a></li>
+                        <li><a href="#" class="text-light">Login / Register</a></li>
+                        <li><a href="#" class="text-light">Cart</a></li>
+                        <li><a href="#" class="text-light">Wishlist</a></li>
+                        <li><a href="#" class="text-light">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-2 mb-4">
+                    <h5>Quick Link</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms of Use</a></li>
+                        <li><a href="#" class="text-light">FAQ</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Download App Section -->
+                <div class="col-md-2 mb-4">
+                    <div class="row mt-3">
+                        <!-- App Download and Social Links Section -->
+                        <div class="col-md-4 mb-4">
+                            <h5>Download App</h5>
+                            <div class="d-flex align-items-center">
+                                <img src="https://w7.pngwing.com/pngs/144/829/png-transparent-qr-code-information-qr-code-android-qrcode-text-rectangle-monochrome-thumbnail.png" alt="QR Code" style="width: 60px; height: 60px; margin-right: 10px;">
+                                <div>
+                                    <img src="https://logodownload.org/wp-content/uploads/2019/06/google-play-logo.png" alt="Google Play" style="width: 100px; margin-bottom: 5px;">
+                                    <img src="https://www.nicepng.com/png/detail/17-179971_itunes-app-store-logo.png" alt="App Store" style="width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="social-icons mt-2">
+                        <a href="#"><i class="bi bi-facebook text-light me-3"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-light me-3"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-light me-3"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-light"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <hr style="color: rgb(115, 107, 107);">
+        <div class="text-center py-3">
+            <p>&copy; Copyright Rimel 2022. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
